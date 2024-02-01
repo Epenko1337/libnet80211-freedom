@@ -20,7 +20,7 @@
 extern "C" {
 #endif
 
-int ieee80211_freedom_output(uint8 dinterface, uint8* buf, uint32 len, bool seq_ctl);
+int ieee80211_freedom_output(uint8 interface, uint8* buf, uint32 len, bool seq_ctl);
 
 
 #ifdef __cplusplus
