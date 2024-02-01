@@ -8,7 +8,12 @@ Things patched:
   - No frame control restriction (was allowed to send only management frames with beacon or probe subtypes and no flags)
 
 Usage for arduino ide:
-  -Replace original libnet80211.a in ~/.ardinoXX/packages/esp8266/hardware/esp8266/3.1.2/tools/sdk/lib/NONOSDKXXX_XXXXXX
+  - Replace original libnet80211.a in ~/.ardinoXX/packages/esp8266/hardware/esp8266/X.X.X/tools/sdk/lib/NONOSDKXXX_XXXXXX
+  - Place ieee80211.h in ~/.arduinoXX/packages/esp8266/hardware/esp8266/X.X.X/tools/sdk/include
+  - Include ieee80211.h in .ino project
+
+Function usage notes:
+  - Pass wifi_get_broadcast_if() result as interface parameter
 
 ORIGINAL
 
